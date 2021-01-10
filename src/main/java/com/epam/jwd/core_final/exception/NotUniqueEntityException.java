@@ -1,10 +1,10 @@
 package com.epam.jwd.core_final.exception;
 
-public class InvalidStateException extends Exception {
+public class NotUniqueEntityException extends RuntimeException{
     private String message;
 
-    public InvalidStateException() {
-        this.message = "Invalid state exception";
+    public NotUniqueEntityException() {
+        this.message = "Entity is not unique";
     }
 
     @Override
